@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carol Chaw — Frontend Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">carol.chaw</a>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">work</a></li>
+      <li><a href="#experience">exp</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><button class="theme-btn" id="themeBtn">☀ light</button></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-eyebrow">// available for remote opportunities worldwide</p>
+      <h1 class="hero-name">
+        <span class="hero-name--accent1">Carol</span><br>
+        <span class="hero-name--accent2">Chaw</span>
+      </h1>
+      <div class="hero-typed">
+        &gt; <span class="hero-typed-text" id="typed"></span><span class="typed-cursor">_</span>
+      </div>
+      <p class="hero-desc">Senior Frontend Engineer experienced in web application development and digital advertising technology across APAC. Leads projects end-to-end — from planning and scoping to delivery.</p>
+      <div class="hero-btns">
+        <a href="#skills" class="btn-primary">Explore my work ↓</a>
+        <a href="#contact" class="btn-outline">Get in touch</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <p class="section-label">// about me</p>
+    <h2 class="section-title">Who I am</h2>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p class="about-text-para">Senior Frontend Engineer and Creative Ad Tech Specialist with experience across <strong>Malaysia, Taiwan, Singapore, SEA, Hong Kong, and Australia</strong>.</p>
+        <p class="about-text-para">I lead projects end-to-end — from planning and scoping to delivery — building <strong>scalable frontend solutions</strong> and digital advertising technology that works.</p>
+        <p class="about-text-para">Comfortable working across diverse teams and markets. Fluent in <strong>English, Mandarin, Cantonese & Bahasa Malaysia</strong>.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card stat-card--purple">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">Rich media templates</div>
+        </div>
+        <div class="stat-card stat-card--red">
+          <div class="stat-num">6</div>
+          <div class="stat-label">APAC markets</div>
+        </div>
+        <div class="stat-card stat-card--green">
+          <div class="stat-num">4</div>
+          <div class="stat-label">Languages spoken</div>
+        </div>
+        <div class="stat-card stat-card--purple">
+          <div class="stat-num">E2E</div>
+          <div class="stat-label">Project delivery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <p class="section-label">// skills</p>
+    <h2 class="section-title">What I work with</h2>
+    <div class="skills-cloud reveal">
+      <div class="skill-group">
+        <div class="skill-group-label">FRONTEND</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">CSS3 / SCSS</span>
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">jQuery</span>
+          <span class="skill-tag">Bootstrap</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">REST API</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">AD TECH & PROGRAMMATIC</div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--adtech">Rich Media Ads</span>
+          <span class="skill-tag skill-tag--adtech">DCO</span>
+          <span class="skill-tag skill-tag--adtech">Google DV360</span>
+          <span class="skill-tag skill-tag--adtech">Campaign Manager</span>
+          <span class="skill-tag skill-tag--adtech">The Trade Desk</span>
+          <span class="skill-tag skill-tag--adtech">Google Ad Manager</span>
+          <span class="skill-tag skill-tag--adtech">Sizmek</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">ANALYTICS & TOOLS</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Google Analytics GA4</span>
+          <span class="skill-tag">Google Tag Manager</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Adobe Creative Suite</span>
+          <span class="skill-tag">WordPress</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GSAP</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-label">GENERATIVE AI ✦</div>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag--ai">Prompt Engineering</span>
+          <span class="skill-tag skill-tag--ai">Claude</span>
+          <span class="skill-tag skill-tag--ai">ChatGPT</span>
+          <span class="skill-tag skill-tag--ai">AI-assisted Development</span>
+          <span class="skill-tag skill-tag--ai">AI Creative Workflows</span>
+          <span class="skill-tag skill-tag--ai">AI Debugging</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <p class="section-label">// projects</p>
+    <h2 class="section-title">Selected work</h2>
+    <div class="project-grid">
+      <div class="project-card reveal">
+        <div class="project-type">REACT.JS · AD TECH · SPA</div>
+        <h3 class="project-title">Rich Media Ad Gallery</h3>
+        <p class="project-desc">SPA showcasing 50+ enterprise rich media templates with Google Sheets API as a live CMS. Deployed for DV360 and The Trade Desk.</p>
+        <div class="project-tags"><span class="project-tag">React.js</span><span class="project-tag">Sheets API</span><span class="project-tag">DV360</span></div>
+        <a href="https://performics.com.tw/" target="_blank" class="project-link">View live →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">REACT.JS · GA4 · GTM</div>
+        <h3 class="project-title">E-Commerce Analytics Training</h3>
+        <p class="project-desc">Full e-commerce site with GA4 and GTM instrumented for user behaviour tracking — adopted for client training across multiple APAC markets.</p>
+        <div class="project-tags"><span class="project-tag">React.js</span><span class="project-tag">GA4</span><span class="project-tag">GTM</span></div>
+        <a href="https://creosads.com/gtm-cc" target="_blank" class="project-link">View live →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">HTML5 · GAMIFICATION</div>
+        <h3 class="project-title">Oatya Interactive Microsite</h3>
+        <p class="project-desc">Campaign site with trackable mini game. All interactions feed directly into retargeting and post-campaign analytics.</p>
+        <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">JS</span><span class="project-tag">Event Tracking</span></div>
+        <a href="https://creosads.com/project/event-site" target="_blank" class="project-link">View live →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">HTML5 ADS · PROGRAMMATIC</div>
+        <h3 class="project-title">Enterprise Banner Library</h3>
+        <p class="project-desc">50+ animated HTML5 templates for programmatic platforms. Built for Samsung, Nestlé and more across APAC markets.</p>
+        <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">Programmatic</span></div>
+        <a href="https://performics.com.tw/" target="_blank" class="project-link">View live →</a>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-type">HTML5 · END-TO-END</div>
+        <h3 class="project-title">Metric School Website</h3>
+        <p class="project-desc">Full institutional website delivered independently — from brief to launch — for a multilingual international school.</p>
+        <div class="project-tags"><span class="project-tag">HTML5</span><span class="project-tag">CSS3</span><span class="project-tag">JavaScript</span></div>
+        <a href="https://creosads.com/project/matrixschool" target="_blank" class="project-link">View live →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <p class="section-label">// experience</p>
+    <h2 class="section-title">Where I've worked</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot--purple"></div>
+        <div class="timeline-company">ASTRO MALAYSIA HOLDINGS</div>
+        <div class="timeline-role">Creative Engineer (Frontend)</div>
+        <div class="timeline-location">Kuala Lumpur · 2025 – Present</div>
+        <p class="timeline-desc">Leading DCO campaign delivery and programmatic creative development. Introduced AI-assisted workflows to improve production efficiency and scale creative variation.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot--red"></div>
+        <div class="timeline-company">PERFORMICS BY PUBLICIS GROUPE TAIWAN</div>
+        <div class="timeline-role">Front End Developer</div>
+        <div class="timeline-location">Taiwan · Singapore · Australia · 2020 – 2024</div>
+        <p class="timeline-desc">Built rich media ad gallery platform, e-commerce analytics training site, and 50+ enterprise templates. Delivered for Samsung, Nestlé and more.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot--green"></div>
+        <div class="timeline-company">ADV (FORMERLY SIZMEK SEA)</div>
+        <div class="timeline-role">Creative Specialist, SEA</div>
+        <div class="timeline-location">Malaysia · SEA · Taiwan · Hong Kong · 2016 – 2019</div>
+        <p class="timeline-desc">HTML5 animated banners, responsive portals, and internal CMS. Client training across Malaysia, SEA, Taiwan and Hong Kong.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot timeline-dot--muted"></div>
+        <div class="timeline-company">GIGABIT HOSTING</div>
+        <div class="timeline-role">Web Application Developer – Frontend</div>
+        <div class="timeline-location">Kuala Lumpur · 2020</div>
+        <p class="timeline-desc">React.js dashboard development and REST API integration with backend engineering team.</p>
+      </div>
+      <div class="timeline-earlier">
+        <div class="timeline-earlier-line"></div>
+        <div class="timeline-earlier-text">// earlier roles in web development & design · 2008 – 2016</div>
+        <div class="timeline-earlier-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact-card reveal">
+      <h3 class="contact-title">Let's build something</h3>
+      <p class="contact-desc">Open to remote opportunities worldwide — frontend engineering, ad tech, web applications.</p>
+      <div class="contact-links">
+        <a href="mailto:badcarol89@hotmail.com" class="contact-link">✉ email</a>
+        <a href="https://www.linkedin.com/in/carol-chaw-697502188/" target="_blank" class="contact-link">linkedin</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>designed & coded by carol chaw · 2025</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

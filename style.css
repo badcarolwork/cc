@@ -362,6 +362,11 @@ body {
   color: var(--text);
 }
 
+.about-ai-tool {
+  font-weight: 600;
+  color: var(--accent-3);
+}
+
 .about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
